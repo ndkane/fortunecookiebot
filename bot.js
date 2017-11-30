@@ -21,8 +21,8 @@ var stream = T.stream('user');
 // Anytime someone follows me
 stream.on('follow', followed);
 
-// Just looking at the event but I could tweet back!
-//function followed(event) {
+ Just looking at the event but I could tweet back!
+function followed(event) {
 //  var name = event.source.name;
 //  var screenName = event.source.screen_name;
 //  console.log('I was followed by: ' + name + ' ' + screenName);
@@ -52,10 +52,10 @@ function tweetEvent(tweet) {
 
   // Ok, if this was in reply to me
   // Tweets by me show up here too
-  if (reply_to === 'a2zitp') {
+  if (reply_to === 'emoji_fortunes') {
 
     // Get rid of the @ mention
-    //txt = txt.replace(/@a2zitp/g,'');
+    txt = txt.replace(/@emoji_fortunes/g,'');
 
     // Start a reply back to the sender
     var replyArray = ['@'+name + 'delete ur account',
