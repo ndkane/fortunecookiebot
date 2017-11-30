@@ -6,6 +6,9 @@ var Bot = new TwitterBot({
  access_token: process.env.BOT_ACCESS_TOKEN,
  access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET
 });
+
+console.log("It's working!")
+
 var phraseArray = [ "gimme them emojis",
                     "emoji fortunes, come and get'em",
                     "Tweet us your 30 last used emojis to unlock your future." ];
