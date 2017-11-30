@@ -16,5 +16,5 @@ function chooseRandom(myArray) {
   return myArray[Math.floor(Math.random() * myArray.length)];
 }
 var phrase = chooseRandom(phraseArray) + ", " + chooseRandom(phraseArray);
-Bot.tweet(phrase);
+Bot.tweet(phrase); 
 
